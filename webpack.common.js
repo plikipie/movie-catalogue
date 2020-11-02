@@ -3,6 +3,7 @@
 /* eslint-disable linebreak-style */
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const path = require("path");
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
