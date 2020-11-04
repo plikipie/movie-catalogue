@@ -1,3 +1,5 @@
+import TheMovieDbSource from "../../data/themoviedb-source";
+
 const Detail = {
   async render() {
     return `
@@ -5,7 +7,9 @@ const Detail = {
     `;
   },
   async afterRender() {
-    // fungsi ini akan dipanggil setelah render()
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const movie = await TheMovieDbSource.detailMovie(url.id);
+    console.log(movie);
   },
 };
 
