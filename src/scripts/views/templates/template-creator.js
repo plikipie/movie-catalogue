@@ -32,9 +32,9 @@ const createMovieItemTemplate = (movie) => `
     }" alt="${movie.title}" class="movie-item__header__poster"/>
     </div>
     <div class="movie-item__header__rating">
-        <p>⭐️<span class="movie-item__header__rating__score">${
-          movie.vote_average
-        }</span></p>
+         <p> ⭐️<span class="movie-item__header__rating__score">${
+           movie.vote_average
+         }</span></p>
     </div>
         <div class="movie-item__content">
             <h3><a href="${`#/detail/${movie.id}`}">${movie.title}</a></h3>
