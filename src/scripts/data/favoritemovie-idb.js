@@ -15,7 +15,7 @@ const FavoriteMovieIdb = {
   },
 
   async getAllMovies() {
-    return (await dbPromise).getALl(OBJECT_STORE_NAME);
+    return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
 
   async putMovie(movie) {
